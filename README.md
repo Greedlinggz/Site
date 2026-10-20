@@ -1,2 +1,2 @@
 # Site
-Trabalho de Terça
+Trabalho de Terça.
