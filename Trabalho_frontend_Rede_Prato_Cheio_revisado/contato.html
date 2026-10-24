@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contato e doação | Rede Prato Cheio — Rede Prato Cheio, sustentabilidade e impacto social.">
+  <title>Contato e doação | Rede Prato Cheio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Rede Prato Cheio — página inicial">🍽️ Rede Prato Cheio</a>
+    <nav aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="projetos.html">Projetos</a></li>
+<li><a href="impacto.html">Impacto</a></li>
+<li><a href="acessibilidade.html">Acessibilidade</a></li>
+<li><a href="galeria.html">Galeria</a></li>
+<li><a href="midia.html">Mídia</a></li>
+<li><a href="noticias.html">Notícias</a></li>
+<li><a href="contato.html" aria-current="page">Contato</a></li>
+<li><a href="orcamento_hospedagem.html">Hospedagem</a></li></ul></nav>
+  </header>
+  <main id="conteudo">
+    
+<section class="page-intro container"><p class="tag">Faça parte da rede</p><h1>Contato e intenção de doação</h1><p class="lead">Preencha o formulário para registrar uma intenção de contato. Nesta versão estática, os dados não são enviados nem armazenados em servidor.</p></section>
+<section class="container content"><form id="form-contato" action="#" method="get">
+<div class="form-grid">
+<div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" type="text" autocomplete="name" required minlength="2" maxlength="100"></div>
+<div class="field"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="field"><label for="telefone">Telefone (opcional)</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" pattern="[0-9()+ .-]{8,20}" aria-describedby="telefone-ajuda"><small id="telefone-ajuda">Use de 8 a 20 caracteres: números, espaço, +, parênteses, ponto ou hífen.</small></div>
+<div class="field"><label for="data">Data preferida para contato (opcional)</label><input id="data" name="data" type="date"></div>
+<div class="field"><label for="tipo">Assunto *</label><select id="tipo" name="tipo" required><option value="">Selecione uma opção</option><option>Doação de alimentos</option><option>Doação de roupas</option><option>Voluntariado</option><option>Parceria</option><option>Outro assunto</option></select></div>
+<div class="field"><label for="quantidade">Quantidade aproximada de itens (opcional)</label><input id="quantidade" name="quantidade" type="number" min="1" max="10000" step="1"></div>
+<div class="field full"><label for="mensagem">Mensagem *</label><textarea id="mensagem" name="mensagem" required minlength="10" maxlength="1000"></textarea></div>
+<div class="field full"><label><input type="checkbox" name="consentimento" required style="width:auto"> Concordo em usar os dados informados somente para responder a esta solicitação. *</label></div>
+</div><button class="button" type="submit">Validar formulário</button>
+<p id="form-status" role="status" aria-live="polite"></p>
+</form>
+<h2>Equipe</h2><p>Equipe Rede Prato Cheio — projeto acadêmico de Front-End. Adicione aqui os nomes dos integrantes e os contatos oficiais antes da entrega final.</p>
+<div class="callout">Para receber respostas de verdade, será necessário conectar este formulário a um back-end ou serviço autorizado e publicar uma política de privacidade adequada.</div></section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>🍽️ Rede Prato Cheio</strong><br>Menos desperdício, mais solidariedade.</p>
+      <p>Projeto acadêmico de Front-End · <a href="docs/README.md">Documentação</a><br>© Rede Prato Cheio</p>
+    </div>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

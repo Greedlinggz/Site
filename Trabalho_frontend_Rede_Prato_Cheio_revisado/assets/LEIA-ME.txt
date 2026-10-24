@@ -1,0 +1,4 @@
+Arquivos de mídia opcionais do projeto.
+Para ativar o player de vídeo, adicione um arquivo próprio/autorizado chamado campanha.mp4.
+Para ativar o player de áudio, adicione um arquivo próprio/autorizado chamado mensagem.mp3.
+Inclua legendas/transcrição e confira direitos de uso antes de publicar.
