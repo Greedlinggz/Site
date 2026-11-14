@@ -1,0 +1,1 @@
+Coloque suas fotos nesta pasta e referencie pelo caminho imagens/nome-da-foto.jpg nos arquivos HTML.
