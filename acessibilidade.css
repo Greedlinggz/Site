@@ -1,0 +1,70 @@
+/* Recursos de acessibilidade — Rede Prato Cheio. Mantém o tema creme original. */
+html { scroll-padding-top: 7rem; }
+main[id="conteudo"], section[id] { scroll-margin-top: 7rem; }
+main:focus { outline: none; }
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #bd7200 !important;
+  outline-offset: 3px !important;
+}
+/* Títulos das páginas internas usam H1 sem modificar o visual anterior. */
+.sec-head h1 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); }
+/* Área de clique legível para pessoas com mobilidade reduzida. */
+button, .menu a, .btn, summary, .a11y-panel button { min-height: 42px; }
+[hidden] { display: none !important; }
+.campo.invalido :is(input, select, textarea) { border-color: #b3261e !important; }
+.campo.invalido .erro { display: block !important; }
+.campo input[aria-invalid="true"], .campo select[aria-invalid="true"], .campo textarea[aria-invalid="true"] { border-color:#b3261e !important; }
+/* Ajuste de fonte proporcional: rem respeita o tamanho escolhido sem travar zoom do navegador. */
+html.destacar-links a:not(.btn):not(.brand):not(.a11y-trigger) { text-decoration: underline !important; text-underline-offset: .18em; text-decoration-thickness: 2px; }
+html.reduzir-animacoes, html.reduzir-animacoes * , html.reduzir-animacoes *::before, html.reduzir-animacoes *::after {
+  animation: none !important; transition: none !important; scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
+/* Barra flutuante acessível, disponível em todas as páginas. */
+.a11y-widget { position: fixed; z-index: 300; right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); width: auto; font-family: system-ui,-apple-system,sans-serif; font-size: 16px; line-height: 1.45; }
+.a11y-trigger { display: flex; align-items: center; gap: 8px; margin-left: auto; border: 2px solid #fef8db; background: #0f6244; color: white; border-radius: 999px; min-height: 48px; padding: 10px 17px; font: 700 15px/1.3 system-ui,sans-serif; cursor: pointer; box-shadow: 0 5px 22px rgba(0,0,0,.28); }
+.a11y-trigger:hover { background: #0b4b34; }
+.a11y-trigger:focus-visible { outline: 3px solid #e6a721 !important; outline-offset: 3px !important; }
+.a11y-panel { width: min(352px, calc(100vw - 24px)); max-height: min(78vh, 650px); overflow-y: auto; overscroll-behavior: contain; padding: 17px; margin-bottom: 10px; border: 2px solid #0f6244; border-radius: 17px; background: #fffdf8; color: #17291f; box-shadow: 0 14px 42px rgba(0,0,0,.28); }
+.a11y-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.a11y-top h2 { margin: 0; color: #123d2d; font: 700 20px/1.3 system-ui,sans-serif; }
+.a11y-panel p { color: #304538; font-size: 13px; margin: 6px 0 12px; }
+.a11y-actions { display:grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.a11y-panel button:not(.a11y-close) { border: 1.5px solid #75877b; border-radius: 10px; background: #fff; color: #153c2b; font: 650 14px/1.3 system-ui,sans-serif; padding: 10px 8px; cursor: pointer; text-align: center; }
+.a11y-panel button:hover { background: #e3f3ea; }
+.a11y-panel button[aria-pressed="true"] { background: #0f6244; border-color: #0f6244; color: #fff; }
+.a11y-panel button:disabled { opacity: .48; cursor: not-allowed; }
+.a11y-panel .a11y-wide { grid-column: 1 / -1; }
+.a11y-close { border: 1px solid #728075; border-radius: 8px; background: #fff; color: #102c20; cursor: pointer; font: 700 14px system-ui,sans-serif; padding: 5px 9px; min-height: 38px; }
+.a11y-help { padding-top: 9px; border-top: 1px solid #becbbe; }
+.a11y-status { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.a11y-results { margin: 12px 0; color: #263f30; font-weight: 600; font-size: .9rem; }
+@media (max-width: 620px) {
+  .a11y-trigger { min-height:48px; font-size:14px; padding: 9px 13px; }
+  .a11y-panel { max-height: calc(100dvh - 90px); }
+}
+/* Modo opcional de alto contraste: não altera o tema creme no modo padrão. */
+html.alto-contraste { color-scheme: dark; }
+html.alto-contraste body,
+html.alto-contraste main,
+html.alto-contraste header.top,
+html.alto-contraste main > section,
+html.alto-contraste main > section:nth-of-type(even),
+html.alto-contraste main > section.transp,
+html.alto-contraste .hero,
+html.alto-contraste .stats,
+html.alto-contraste footer { background: #080b0f !important; color: #fff !important; border-color: #e2e7ec !important; }
+html.alto-contraste :is(.card,.card-flut,.ponto,.aside-info,.painel-transp,.abas,.aviso,.nota,.pix,.chip,.trust,details,form,.sucesso,.painel,.tag,.barra,.filtros,.trk,.bar) { background: #151b23 !important; color: #fff !important; border-color: #d3d7dd !important; box-shadow:none !important; }
+html.alto-contraste :is(h1,h2,h3,h4,p,li,span,small,strong,b,label,summary,.lead,.eyebrow,.lbl,.num,.hint,.end,.tl,.resp,.sec-head p,.brand,.brand small,.menu a,.transp h2,.transp h3,.transp .sec-head p,.transp .eyebrow,.transp .destino .tl,.form-status) { color:#fff !important; }
+html.alto-contraste :is(a:not(.btn),footer a) { color: #ffe36d !important; text-decoration: underline; text-underline-offset: .16em; }
+html.alto-contraste :is(.btn,.aba[aria-selected="true"],.chip[aria-pressed="true"]) { background: #ffe36d !important; color: #080b0f !important; border-color: #ffe36d !important; }
+html.alto-contraste :is(.burger,.aba,.copiar,.chip,button:not(.btn):not(.a11y-trigger),input,select,textarea) { color:#fff !important; background:#202934 !important; border-color:#fff !important; }
+html.alto-contraste input::placeholder,html.alto-contraste textarea::placeholder { color:#ececec !important; opacity:1; }
+html.alto-contraste .campo.invalido :is(input,select,textarea) { border-color:#ff9292 !important; }
+html.alto-contraste .erro { color: #ffacac !important; }
+html.alto-contraste .a11y-widget .a11y-trigger { background: #ffe36d !important; color: #080b0f !important; border-color:#fff !important; }
+html.alto-contraste .a11y-panel { background: #101820 !important; color: #fff !important; border-color: #ffe36d !important; }
+html.alto-contraste .a11y-panel :is(h2,p) { color:#fff !important; }
+html.alto-contraste .a11y-panel button[aria-pressed="true"] { background: #ffe36d !important; color: #080b0f !important; }
+html.alto-contraste .a11y-panel button:not([aria-pressed="true"]) { background: #202934 !important; color: #fff !important; }
+html.alto-contraste :where(a,button,input,select,textarea,summary):focus-visible { outline-color: #ffec6d !important; }

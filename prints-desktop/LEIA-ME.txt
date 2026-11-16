@@ -1,0 +1,1 @@
+Capturas de 1440x900 renderizadas a partir do HTML/CSS local em navegador Chromium. Recursos externos e scripts não foram executados durante a captura; as imagens são evidências visuais, não testes funcionais nem prova de deploy HTTPS.
