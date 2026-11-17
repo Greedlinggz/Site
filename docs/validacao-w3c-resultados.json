@@ -1,0 +1,111 @@
+{
+    "project":  "Rede Prato Cheio",
+    "validator":  "W3C Nu Html Checker",
+    "endpoint":  "https://validator.w3.org/nu/?out=json",
+    "generatedAt":  "2026-11-16T23:54:41.5151177Z",
+    "method":  "POST each local HTML file as text/html; charset=utf-8",
+    "fileCount":  11,
+    "totalErrors":  9,
+    "totalWarnings":  0,
+    "results":  [
+                    {
+                        "file":  "alimentos.html",
+                        "validatedAt":  "2026-11-16T23:54:39.6171849Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":11,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eAceita\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "como-funciona.html",
+                        "validatedAt":  "2026-11-16T23:54:39.7882095Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":11,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eVocê d\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "contato.html",
+                        "validatedAt":  "2026-11-16T23:54:39.9653605Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":1,\"lastColumn\":2375,\"firstColumn\":2372,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"ss=\\\"card\\\"\u003e\u003ch3\u003eE-mail\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "doacoes-ong.html",
+                        "validatedAt":  "2026-11-16T23:54:40.3131662Z",
+                        "httpStatus":  200,
+                        "errors":  0,
+                        "warnings":  0,
+                        "messageCount":  0,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[],\"language\":\"pt\"}\n"
+                    },
+                    {
+                        "file":  "doar.html",
+                        "validatedAt":  "2026-11-16T23:54:40.4884853Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":171,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eO que \",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "duvidas.html",
+                        "validatedAt":  "2026-11-16T23:54:40.6785473Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":33,\"lastColumn\":79,\"firstColumn\":76,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"rid\\\"\u003e\u003cdiv\u003e\u003ch3\u003eRede P\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "index.html",
+                        "validatedAt":  "2026-11-16T23:54:40.8438507Z",
+                        "httpStatus":  200,
+                        "errors":  0,
+                        "warnings":  0,
+                        "messageCount":  0,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[]}\n"
+                    },
+                    {
+                        "file":  "pontos-de-coleta.html",
+                        "validatedAt":  "2026-11-16T23:54:41.0125593Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":17,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eMercad\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "receber-ajuda.html",
+                        "validatedAt":  "2026-11-16T23:54:41.1863276Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":171,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eO que \",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "roupas.html",
+                        "validatedAt":  "2026-11-16T23:54:41.3538875Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":10,\"lastColumn\":14,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3\u003eComo a\",\"hiliteStart\":10,\"hiliteLength\":4}]}\n"
+                    },
+                    {
+                        "file":  "transparencia.html",
+                        "validatedAt":  "2026-11-16T23:54:41.5151177Z",
+                        "httpStatus":  200,
+                        "errors":  1,
+                        "warnings":  0,
+                        "messageCount":  1,
+                        "rawResponseJson":  "{\"version\":\"26.11.14\",\"messages\":[{\"type\":\"error\",\"lastLine\":34,\"lastColumn\":42,\"firstColumn\":11,\"message\":\"The heading “h3” (with computed level 3) follows the heading “h1” (with computed level 1), skipping 1 heading level.\",\"extract\":\"          \u003ch3 style=\\\"margin-bottom:.4rem\\\"\u003eO que \",\"hiliteStart\":10,\"hiliteLength\":32}]}\n"
+                    }
+                ]
+}
